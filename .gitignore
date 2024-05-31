@@ -224,3 +224,4 @@ tests/Core8-BiomassAge4.0/Climate-annual-log.csv
 tests/Core8-BiomassAge4.0/Climate-future-input-log.csv
 tests/Core8-BiomassAge4.0/Climate-spinup-input-log.csv
 tests/Core8-BiomassAge4.0/Landis-climate-log.txt
+src/output-biomass-by-age.sln
