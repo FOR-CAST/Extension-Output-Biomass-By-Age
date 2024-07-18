@@ -16,10 +16,9 @@ You need:
 - The [LANDIS-II model v8.0](http://www.landis-ii.org/install) installed on your computer.
 - Example files (see below)
 
-# Download the Extension
+# Download and Run the Extension Installer
 
 - The latest version can be [downloaded from GitHub](https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-By-Age/blob/master/deploy/installer/LANDIS-II-V8%20Output%20Biomass%20By%20Age%204.0-setup.exe). (Look for the download icon in the upper right corner.)  Launch the installer.
-
 
 # Example Files
 
