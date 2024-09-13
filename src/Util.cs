@@ -1,6 +1,6 @@
 //  Authors:  Robert M. Scheller
 
-using Landis.Library.BiomassCohorts;
+using Landis.Library.UniversalCohorts;
 using Landis.Utilities;
 using Landis.Core;
 using Landis.SpatialModeling;
@@ -133,7 +133,7 @@ namespace Landis.Extension.Output.BiomassByAge
         //---------------------------------------------------------------------
         public static int ComputeAgeClassBiomass(Site site, ISpecies species, AgeClass ageclass)
         {
-            ISpeciesCohorts cohorts = (Landis.Library.BiomassCohorts.ISpeciesCohorts) SiteVars.Cohorts[site][species];
+            ISpeciesCohorts cohorts = SiteVars.Cohorts[site][species];
             int total = 0;
             if (cohorts == null)
                 return total;
@@ -146,9 +146,9 @@ namespace Landis.Extension.Output.BiomassByAge
                     {// <
                         foreach (ICohort cohort in cohorts)
                         {
-                            if (cohort.Age < upr_age)
+                            if (cohort.Data.Age < upr_age)
                             {
-                                total += cohort.Biomass;
+                                total += cohort.Data.Biomass;
                             }
                         }
                         break;
@@ -158,11 +158,11 @@ namespace Landis.Extension.Output.BiomassByAge
                     {// Range - equivalent to (>= lwr_age and <upr_age)
                         foreach (ICohort cohort in cohorts)
                         {
-                            if (cohort.Age >= lwr_age && cohort.Age < upr_age)
+                            if (cohort.Data.Age >= lwr_age && cohort.Data.Age < upr_age)
                             {
-                                total += cohort.Biomass;
+                                total += cohort.Data.Biomass;
                             }
-                            else if (cohort.Age < lwr_age)
+                            else if (cohort.Data.Age < lwr_age)
                                 break;//we can break here, since ages sorted descending order
                         }
                         break;
@@ -172,9 +172,9 @@ namespace Landis.Extension.Output.BiomassByAge
                     {// >  (is this equivalent to >= ??)
                         foreach (ICohort cohort in cohorts)
                         {
-                            if (cohort.Age >= lwr_age)
+                            if (cohort.Data.Age >= lwr_age)
                             {
-                                total += cohort.Biomass;
+                                total += cohort.Data.Biomass;
                             }
                             else
                                 break;//we can break here, since ages sorted descending order
@@ -186,11 +186,11 @@ namespace Landis.Extension.Output.BiomassByAge
                     {// Single value
                         foreach (ICohort cohort in cohorts)
                         {
-                            if (cohort.Age == lwr_age)
+                            if (cohort.Data.Age == lwr_age)
                             {
-                                total += cohort.Biomass;
+                                total += cohort.Data.Biomass;
                             }
-                            else if (cohort.Age < lwr_age)
+                            else if (cohort.Data.Age < lwr_age)
                                 break;//we can break here, since ages sorted descending order
                         }
                         break;

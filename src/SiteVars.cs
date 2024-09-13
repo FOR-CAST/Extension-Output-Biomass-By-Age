@@ -1,10 +1,8 @@
 //  Authors:  Brendan C. Ward, Robert M. Scheller
 
-//using Landis.Core;
-using Landis.Library.BiomassCohorts;
+using Landis.Library.UniversalCohorts;
 using System.Collections.Generic;
 using Landis.SpatialModeling;
-using Landis.Library.Biomass;
 
 namespace Landis.Extension.Output.BiomassByAge
 {
@@ -16,7 +14,7 @@ namespace Landis.Extension.Output.BiomassByAge
 
         public static void Initialize()
         {
-            cohorts = PlugIn.ModelCore.GetSiteVar<ISiteCohorts>("Succession.BiomassCohorts");
+            cohorts = PlugIn.ModelCore.GetSiteVar<ISiteCohorts>("Succession.UniversalCohorts");
 
             if (cohorts == null)
             {

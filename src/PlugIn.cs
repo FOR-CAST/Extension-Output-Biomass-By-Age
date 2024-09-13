@@ -1,9 +1,8 @@
 //  Authors:  Robert M. Scheller
 
 using Landis.Utilities;
-using Landis.Library.BiomassCohorts;
+using Landis.Library.UniversalCohorts;
 using Landis.SpatialModeling;
-using Landis.Library.Biomass;
 using Landis.Core;
 
 using System;
@@ -44,6 +43,11 @@ namespace Landis.Extension.Output.BiomassByAge
                 return modelCore;
             }
         }
+        public override void AddCohortData()
+        {
+            return;
+        }
+
         //---------------------------------------------------------------------
 
         public override void LoadParameters(string dataFile, ICore mCore)
