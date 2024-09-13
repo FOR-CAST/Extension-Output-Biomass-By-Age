@@ -4,9 +4,9 @@ This extension summarizes and maps biomass data by species age classes.  This is
 
 # Release Notes
 
-- Latest release: Version 4.0, August 2018
+- Latest release: Version 4.0, August 2024
 - Full release details found in the User Guide and on GitHub.
-- [View User Guide](https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-By-Age/blob/master/docs/LANDIS-II%20Age%20Biomass%20Output%20v4.0%20User%20Guide.pdf).
+- [View User Guide](https://github.com/LANDIS-II-Foundation/Extension-Output-Biomass-By-Age/blob/master/docs/LANDIS-II%20Age%20Biomass-By-Age%20Output%20v4.0%20User%20Guide.pdf).
 - Copyright: The LANDIS-II Foundation
 
 # Requirements
