@@ -23,6 +23,7 @@
     <PackageTags>LANDIS-II;Landis;Extension;Output Biomass by Age</PackageTags>
     <Description></Description>
     <PackageReleaseNotes></PackageReleaseNotes>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
